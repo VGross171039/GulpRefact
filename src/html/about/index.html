@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en" class="">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../assets/css/style.css">
+  <title>Обо мне</title>
+</head>
+
+<body>
+  <div class="page-wrap">
+
+    @include('../chunk/header.html')
+
+    <div class="content-wrap">
+
+      <section class="hero hero--about bg-glass flex">
+        <div class="hero-wrapper bg--cover" style="background-image: url(/assets/images/about/pilot-about.jpg);"></div>
+        <div class="container mt-1--lg">
+          <div class="row">
+            <div class="col-100 hero-text text-center">
+              <p class="hero-subtitle">Обо мне</p>
+              <h1 class="h1 accent deco-line--center">Увлечение, ставшее <span>профессией</span></h1>
+            </div>
+          </div>
+        </div>
+        <div class="nextText">
+          <a href="#next_section">Узнать больше</a>
+          <span></span>
+        </div>
+      </section>
+
+
+      <section class="section s-about bg-dark">
+        <div class="container">
+          <div class="row content-block">
+            <div class="col-40--md">
+              <h2 class="h2 deco-line lh-1">Немного <span>о себе</span></h2>
+            </div>
+            <div class="col-60--md">
+              <p>Добрый вечер!</p>
+              <p>Меня зовут Владлен Щетинин.<br>Я веб-разработчик из города Ивантеевка, имею опыт создания сайтов различной
+              тематики и сложности. К работе в веб пришел сначала как к интересному времяпровождению, соответствующему складу моего ума. Но это затягивает, и поражает бесконечностью возможностей, которую виртуальный мир способен дать любому из нас.</p>
+              <p>В сфере веб-разработки работаю уже более 7 лет. За это время участвовал в 30+ проектах, часть из
+              которых создавалась под ключ. С некоторыми примерами моих работ можно ознакомится в соответствующем разделн
+              моего сайта.</p>
+            </div>
+          </div>
+          <div class="row justify-center">
+            <div class="about-grid col-100 col-75--lg">
+              <div class="card order-1 bg--cover" style="background-image: url(/assets/images/about/myfoto/myfoto-1.jpg);">
+                <div class="textcard mb-05 mb-1--sm">
+                  <p class="fs-18 fs-16--md">Прыжок под парашютом</p>
+                </div>
+              </div>
+              <div class="flexwrap">
+              <div class="card bg--cover" style="background-image: url(/assets/images/about/myfoto/myfoto-2.jpg);">
+                <div class="textcard mb-05 mb-1--sm">
+                  <p class="fs-18 fs-16--md">Это я</p>
+                </div>
+              </div>
+              <div class="card bg--cover" style="background-image: url(/assets/images/about/myfoto/myfoto-3.jpg);">
+                <div class="textcard mb-05 mb-1--sm">
+                  <p class="fs-18 fs-16--md">Мне нравится</p>
+                </div>
+              </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+      <section class="section--inner bg-dark">
+        <div class="container">
+          <div class="row content-block">
+            <div class="col-40--md">
+              <h2 class="h2 deco-line lh-1">Основные <span>навыки</span></h2>
+            </div>
+            <div class="col-60--md text-block">
+              <p>Хочу представить вам технологии, которые использую в работе. Это не весь перечень, но дает
+              представление о моих возможностях и подготовке. Значение в процентах ориентировочно показывает уровень
+              владения той или иной технологией веб-разработки.</p>
+            </div>
+          </div>
+
+          <div class="row content-block">
+            <div class="col-100 col-50--lg">
+              <div class="progress_skills">
+                Progress-Skill 1
+              </div>
+            </div>
+            <div class="col-100 col-50--lg">
+              <div class="progress_skills">
+                Progress-Skill 2
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="competences col-100">
+              <h2 class="h3 mb-05 mb-1--md">Другие технологии и инструменты:</h2>
+              <ul class="competences-list">
+                <li>Работа с Addobe Photoshop и Figma</li>
+                <li>Lorem, ipsum dolor</li>
+                <li>Lorem ipsum dolor sit amet</li>
+                <li>Lorem ipsum dolor sit amet</li>
+              </ul>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-100 text-block">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum deserunt suscipit debitis, repudiandae dolorem quisquam saepe, adipisci ipsa amet veniam rerum voluptate asperiores ea sed molestiae delectus qui illo iste fugiat eligendi. Eaque, illo suscipit.</p>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque quibusdam, reiciendis quae quaerat perspiciatis alias deserunt totam placeat esse! Repellat, dicta deserunt.</p>
+              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sequi vitae neque inventore iure ad quod perspiciatis modi aliquam omnis. Animi, tempora eveniet? Voluptates cum voluptatum nisi repellat rem nulla ex autem repellendus harum quisquam. Ullam fuga obcaecati esse et blanditiis quod aut accusamus, provident eos eligendi quibusdam ea enim accusantium ipsam ut sint!</p>
+              <div class="button-wrap text-center">
+                <a href="/competences/" class="view-btn mt-2">Узнать больше</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </div>
+
+    @include('../chunk/footer.html')
+
+  </div>
+  <script src="../assets/js/main.js"></script>
+</body>
+
+</html>

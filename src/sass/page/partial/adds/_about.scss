@@ -1,0 +1,83 @@
+.about-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  @include minMedia(550) {
+    padding: 0 2rem;
+  }
+  @include minMedia(800) {
+    padding: 0;
+  }
+  .card {
+    display: flex;
+    position: relative;
+    width: 100%;
+    outline: .5px solid rgba(255, 255, 255, 0.25);
+    margin-bottom: 20px;
+    padding-left: .5rem;
+    padding-top: 95%;
+    @include minMedia(800) {
+      margin-bottom: 20px;
+    }
+    &:last-child {
+      margin-bottom: 20px;
+      @include minMedia(800) {
+        margin-bottom: 0;
+      }
+    }
+    @include minMedia(800) {
+      width: calc(50% - 10px);
+    }
+    &.order-1 {
+      margin-bottom: 0;
+    }
+  }
+  .textcard {
+    position: absolute;
+    left: 10px;
+    bottom: 0;
+    padding: .5rem 1rem;
+    background-color: rgba(255, 255, 255, .7);
+    color: #000;
+    border-radius: 1px;
+    min-width: 180px;
+    p {
+      color: #000;
+      font-weight: 400;
+      font-size: 1rem;
+      @include minMedia(550) {
+        font-size: .9rem;
+      }
+    }
+  }
+  .flexwrap {
+    width: 100%;
+    @include minMedia(800) {
+      width: calc(50% - 10px);
+    }
+    .card {
+      width: 100%;
+    }
+  }
+}
+
+.competences-list {
+  padding-left: 25px;
+  margin-bottom: 1.1rem;
+  @include minMedia(800) {
+    margin-bottom: 1.4rem;
+  }
+  li {
+    position: relative;
+    &:before {
+      content: "";
+      display: block;
+      width: 15px;
+      height: 2px;
+      background-color: #18e591;
+      position: absolute;
+      left: -25px;
+      top: 15px;
+    }
+  }
+}

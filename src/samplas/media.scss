@@ -1,0 +1,78 @@
+@media (max-height:450px) and (orientation:landscape) {
+  .homepage-hero-text {
+    padding: 0 30px;
+  }
+  .homepage-hero-text h1 .cursor-char,
+  h1 {
+    font-size: 30px;
+    line-height: 35px;
+  }
+  .homepage-hero-text .green-text {
+    margin: 0 0 10px;
+  }
+  .scroll-down {
+    display: none;
+  }
+  .hero {
+    min-height: 450px;
+  }
+  .hero--landing-page {
+    min-height: 450px;
+    height: auto;
+  }
+  .header-logo {
+    left: 30px;
+    top: 30px;
+  }
+  header .start-project-btn {
+    right: 90px;
+    top: 30px;
+  }
+  .nav-toggle {
+    top: 39px;
+    right: 30px;
+  }
+  .grid-item {
+    width: 33.333%;
+    padding: 0 0 33.333%;
+  }
+  .blog-item h2,
+  .stat-item h2 {
+    font-size: 20px;
+    line-height: 22px;
+  }
+  h2 {
+    font-size: 25px;
+    line-height: 35px;
+  }
+  h3,
+  h4,
+  h5,
+  p {
+    font-size: 16px;
+    line-height: 1.6;
+  }
+  .home-services-columns .col--25 {
+    width: 50%;
+    float: left;
+  }
+  .menu-item {
+    font-size: 20px;
+    line-height: 1.4;
+  }
+  .header-nav-list,
+  .main-menu-sub {
+    position: relative;
+    bottom: auto;
+    float: left;
+  }
+  .header-nav-list {
+    padding-right: 30px;
+  }
+  .main-menu-sub .menu-item a {
+    line-height: 1.4;
+  }
+  .isotope-item {
+    width: 33.333%;
+  }
+}

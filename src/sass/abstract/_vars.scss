@@ -1,0 +1,56 @@
+// -----------------------------------------------------------------------------
+// This file contains all application-wide Sass variables.
+// -----------------------------------------------------------------------------
+
+/// Regular font family
+/// @type List
+$text-font-stack: "Roboto", sans-serif !default;
+
+$base-font-size: 20px !default;
+
+$base-line-height: 1.8 !default;
+
+/// Code (monospace) font family
+/// @type List
+$code-font-stack: "Courier New", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Monaco", monospace !default;
+
+$font-weight: (
+  "thin": 100,
+  "light": 300,
+  "regular": 400,
+  "medium": 500,
+  "semibold": 600,
+  "bold": 700,
+  "extrabold": 800
+);
+
+$brand: #df4f4f !default;
+
+$text-color: (
+  "white": #fff,
+  "primary": #ccc,
+  "green": #18e591,
+  "greydark": #666,
+  "dark": #111,
+  "black": #000,
+  "accent": $brand,
+  "footer": #6c769a,
+  "header": #76001d,
+  "error": red
+) !default;
+
+$theme-color: (
+  "body": #fff,
+  "primary": #fff,
+  "gray": #e5e5e5,
+  "dark": #1d1d1d,
+  "black": #1c1c1c,
+  "red": red,
+  "brand": $brand,
+  "brand-hover": darken($brand, 10%),
+  "brand-active": darken($brand, 20%),
+  "footer": #ffe117,
+  "head": #ffe79e,
+) !default;
+
+$ksize: 1.12;

@@ -1,0 +1,63 @@
+html {
+  font-size: 16px;
+  @include minMedia(800) {
+    font-size: $base-font-size;
+  }
+}
+
+body {
+  font-family: $text-font-stack;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: $base-line-height;
+  color: theme_text_color("primary");
+  @include minMedia(550) {
+    font-size: .9rem;
+  }
+  @include minMedia(800) {
+    font-size: $base-font-size;
+  }
+  .light &{
+    color: theme_text_color("greydark");
+  }
+}
+
+@include placeholderColor(inherit);
+
+.input-error,
+.form-error {
+  color: theme_text_color("error");
+  font-size: 13px;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "SourceSansPro";
+  font-weight: 300;
+  color: theme_text_color("white");
+  line-height: 1.2;
+  .light & {
+    color: theme_text_color("black");
+  }
+}
+
+p{
+  @extend body;
+  letter-spacing: .1px;
+  height: auto;
+  @include minMedia(800) {
+    letter-spacing: .15px;
+  }
+  & +p{
+    margin-top: 1.1rem;
+    @include minMedia(800) {
+      margin-top: 1.4rem;
+    }
+  }
+}
+
+@import "fonts";
+@import "titles";
+
+

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en" class="">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../assets/css/style.css">
+  <title>Контакты</title>
+</head>
+
+<body>
+  <div class="page-wrap">
+
+    @include('../chunk/header.html')
+
+    <div class="content-wrap">
+
+      <section class="hero hero--contacts bg-glass flex">
+        <div class="video-wrapper bg--cover">
+          <video class="bg--cover" preload="auto" loop muted autoplay poster="/assets/images/home/pilot.jpg">
+            <source src="/assets/video/contacts/contact.mp4" type="video/mp4">
+          </video>
+        </div>
+        <div class="container mt-1--lg">
+          <div class="row">
+            <div class="col-100 hero-text text-center">
+              <p class="hero-subtitle">Контакты</p>
+              <h1 class="h1 accent deco-line--center">Почему бы не попить кофе и <span class="display-block">начать проект?</span></h1>
+            </div>
+          </div>
+        </div>
+        <div class="nextText">
+          <a href="#next_section">Узнать больше</a>
+          <span></span>
+        </div>
+      </section>
+
+      <section class="section s-contacts bg-dark">
+        <div class="next_scroll" id="next_section"></div>
+        <div class="container">
+          <div class="row">
+            <div class="mb-05 mb-0--lg col-100 col-40--md">
+              <div class="title-contact deco-line">
+                <h2 class="h2 lh-125">Закажите <span>проект</span></h2>
+                <p>или выполнение работ</p>
+              </div>
+              <div class="contact-detail">
+                <p><span>Phone:</span><a href="tel:+79260522029">+7 (926) 052 20 29</a></p>
+                <p><span>Email:</span><a href="mailto:info@vschetinin.ru">info@vschetinin.ru</a></p>
+                <p><span>Follow:</span></p>
+                <div class="flex">
+                  <a href="" rel="nofollow">FB</a>
+                  <a class="ml-1" href="" rel="nofollow">INS</a>
+                  <a class="ml-1" href="" rel="nofollow">TW</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-100 col-60--md">
+              <div class="contact-description mt-1 mt-05--md">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed accusamus non veritatis, cum veniam omnis. At soluta nihil suscipit enim aut!</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis, nesciunt eligendi, voluptates officia amet non sint suscipit nostrum maiores distinctio exercitationem excepturi ipsum eum similique ipsa consequatur neque, molestias debitis omnis perferendis adipisci officiis molestiae magnam possimus? Ex, non similique. Fugiat voluptatibus facere necessitatibus odio perspiciatis a, ducimus rerum laboriosam provident alias aspernatur assumenda.</p>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Adipisci officia enim placeat.</p>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+    </div>
+
+    @include('../chunk/footer.html')
+
+    @include('../chunk/startform.html')
+
+  </div>
+  <script src="../assets/js/libs/compiled.js"></script>
+  <script src="../assets/js/main.js"></script>
+</body>
+
+</html>
+

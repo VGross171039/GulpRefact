@@ -1,0 +1,91 @@
+.waypoints {
+  top: 0;
+  opacity: 1;
+  transition: all .6s cubic-bezier(.4, 0, .2, 1);
+  @include minMedia(1100) {
+    top: 50px;
+    opacity: 0;
+  }
+  @include minMedia(1400) {
+    top: 80px;
+  }
+  &.js-waypoints-animate {
+    top: 0;
+    opacity: 1;
+  }
+}
+
+.nextText {
+  bottom: 70px;
+  left: calc(50% - 90px);
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: .25px;
+  color: #fff;
+  z-index: 99;
+  width: 180px;
+  @include minMedia(550) {
+    font-size: 13px;
+  }
+  @include minMedia(800) {
+    font-size: 15px;
+  }
+  &:hover span {
+    top: 40px;
+    @include minMedia(550) {
+      top: 50px;
+    }
+  }
+  span {
+    width: 2px;
+    height: 25px;
+    background-color: #18e591;
+    top: 30px;
+    left: 0;
+    display: block;
+    margin: 0 auto;
+    transition: all .5s ease;
+    @include minMedia(550) {
+      top: 40px;
+    }
+  }
+}
+
+.nextText,
+.nextText span {
+  position: absolute;
+  right: 0;
+  text-align: center
+}
+
+.nextArrow {
+  position: absolute;
+  left: 0;
+  top: 0;
+  text-align: left;
+  z-index: 99;
+  color: #fff;
+  padding: 20px;
+  transition: all .3s;
+  @include minMedia(800) {
+    left: 20px;
+  }
+  @include minMedia(1100) {
+    left: 20px;
+  }
+  @include minMedia(1400) {
+    left: 20px;
+  }
+  &:hover {
+    @include minMedia(550) {
+      top: .3rem;
+    }
+  }
+  svg {
+    fill: #fff;
+    width: 16px !important;
+  }
+}
+
+

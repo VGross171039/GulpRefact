@@ -1,0 +1,46 @@
+<div class="form-wrapper mt-1--lg">
+  <!-- The form -->
+  <form action="#" id="contact-form" class="form-overlay contact-form">
+    <div class="form-body mb-1">
+      <div class="success"><span></span></div>
+      <ul class="form-fields">
+        <li>
+          <div class="input-container">
+            <input name="name" type="text" value="" class="large" required placeholder="Укажите Ваше имя *" />
+          </div>
+        </li>
+        <li>
+          <div class="input-container">
+            <input name="phone" type="tel" value="" class="large" required placeholder="Номер телефона *" />
+          </div>
+        </li>
+        <li>
+          <div class="input-container">
+            <input name="email" type="email" value="" class="large" placeholder="E-mail" />
+          </div>
+        </li>
+        <li>
+          <div class="input-container input-container-select">
+            <select name="project_budget">
+              <option value disabled selected>Бюджет проекта / работ</option>
+              <option>Менее 30 000 рублей</option>
+              <option>30 000 - 70 000 рублей</option>
+              <option>70 000 - 120 000 рублей</option>
+              <option>120 000 ++ рублей</option>
+            </select>
+          </div>
+        </li>
+        <li>
+          <div class="input-container area-container">
+            <textarea name="message" id="message-contact" rows="7" required
+              placeholder="Ключевые детали проекта / работ, включая сроки ...*"></textarea>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <div class="form-footer top-label">
+      <button class="view-btn" id="contactform-submit-button">Отправить</button>
+    </div>
+  </form>
+  <!-- The form -->
+</div>

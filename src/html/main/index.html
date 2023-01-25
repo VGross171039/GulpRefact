@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en" class="">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../assets/css/style.css">
+  <title>Gulp Refactoring</title>
+</head>
+<body>
+  <div class="page-wrap">
+
+    @include('../chunk/header.html')
+
+    <div class="content-wrap">
+
+      <section class="hero hero--home bg-glass flex">
+        <div class="video-wrapper bg--cover">
+          <video class="bg--cover" preload="auto" loop muted autoplay poster="/assets/images/home/pilot.jpg">
+            <source src="/assets/video/creative/creative.mp4" type="video/mp4">
+          </video>
+        </div>
+        <div class="container mt-1--lg">
+          <div class="row">
+            <div class="col-100 relative">
+              <p class="fs-14 font-bold color-green text-uppercase">Опыт веб-разработки с 2013 года</p>
+              <div class="tiped-wrap">
+                Помогаю заказчикам в:
+                <h1 class="h1"><span class="js-example"></span></h1>
+              </div>
+              <a href="/works/" class="view-btn mt-2">Продолжить знакомство</a>
+              <div class="arrow-wrap relative">
+                <a href="#next_scroll" class="nextArrow">
+                  <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 55.8 92.6">
+                    <rect x="23.8" width="8.3" height="82.6" />
+                    <polygon points="0,64.7 5.8,58.8 27.9,80.9 50,58.8 55.8,64.7 27.9,92.6 " />
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="s_home-section section--inner bg-dark">
+        <div class="next_scroll" id="next_scroll"></div>
+        <div class="home-quotes waypoints js-waypoints-animate">
+          <p>Если вы считаете математику трудной, попробуйте веб-дизайн.<span>#Пятница</span></p>
+        </div>
+        <div class="container">
+          <div class="row content-block">
+            <div class="col-100 col-40--md">
+              <h2 class="h2 deco-line">Для чего вам нужен <span>сайт?</span></h2>
+            </div>
+            <div class="col-100 col-60--md text-block">
+              <p>Далеко-далеко за словесными горами, в стране гласных и согласных живут рыбные тексты. Встретил своих, заглавных раз текст великий текстами! Знаках, ее вопроса? Собрал ты повстречался вскоре маленькая безорфографичный. Переписывается рукописи курсивных несколько свой свою даль! Рукописи?</p>
+              <p>Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Мир букв снова, пунктуация грустный необходимыми образ. Запятой если там даже единственное ее!</p>
+            </div>
+          </div>
+          <div class="row justify-center content-block">
+            <div class="col-100 col-80--lg">
+              <div class="home-bunner bg--cover" style="background-image: url(/assets/images/home/home-banner.jpeg);"></div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-100 text-block">
+              <p>Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Журчит, по всей свою курсивных алфавит переписывается раз безорфографичный ее если пунктуация подзаголовок путь?</p>
+              <p>Далеко-далеко, за словесными горами в стране гласных и согласных живут рыбные тексты. Семантика, даль lorem моей рукописи силуэт переписали толку своего по всей проектах он скатился большого текст обеспечивает свой текстов живет алфавит мир жизни взобравшись щеке! Осталось всеми вершину подзаголовок ipsum буквенных себя предупреждал?</p>
+              <div class="button-wrap text-center">
+                <a href="" class="view-btn mt-2">Узнать больше</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </div>
+
+    @include('../chunk/footer.html')
+
+  </div>
+  <script src="../assets/js/libs/compiled.js"></script>
+  <script src="../assets/js/main.js"></script>
+</body>
+</html>

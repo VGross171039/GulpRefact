@@ -1,0 +1,9 @@
+$styles: (
+  ".display-none": (display: none),
+  ".display-block": (display: block),
+  ".display-inline": (display: inline),
+  ".display-table": (display: table),
+  ".display-inline-block": (display: inline-block)
+);
+
+@include generate_styles($styles);

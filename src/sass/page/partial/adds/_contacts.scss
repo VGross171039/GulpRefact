@@ -1,0 +1,29 @@
+.title-contact{
+  p{
+    color: #fff;
+    font-weight: 100;
+  }
+}
+
+.contact-detail{
+  p{
+    &+p{
+      margin-top: .5rem;
+    }
+    span {
+      display: block;
+      font-weight: 300;
+      color: #666;
+      font-size: 16px;
+      @include minMedia(550) {
+        font-size: 18px;
+      }
+    }
+  }
+  a{
+    transition: all .35s ease;
+    &:hover{
+      color: #fff;
+    }
+  }
+}

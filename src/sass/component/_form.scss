@@ -1,0 +1,176 @@
+.typefilds {
+  border: 0;
+  width: 100%;
+  border-radius: 2px;
+  background-color: #f5f5f5;
+  color: rgba(0, 0, 0, .5);
+  font-family: bentonlight, sans-serif;
+  font-size: 15px;
+  @include minMedia(550) {
+    font-size: 16px;
+  }
+}
+
+// ===============================================
+
+.form-overlay {
+  input,
+  select {
+    @extend .typefilds;
+    padding: 0 20px;
+    height: 50px;
+    line-height: 50px;
+  }
+  textarea {
+    @extend .typefilds;
+    resize: none;
+    height: auto;
+    padding: 15px 20px;
+    line-height: 1.45;
+  }
+  .form-fields li+li {
+    margin-top: .5rem;
+    @include minMedia(550) {
+      margin-top: 1rem;
+    }
+  }
+  .form-body {
+    position: relative;
+    .success~* {
+      transition: all .5s ease;
+    }
+    .success-mail~* {
+      opacity: .6;
+      filter: blur(12px);
+    }
+  }
+  .success {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+    span {
+      display: block;
+      width: 100%;
+      z-index: 1000;
+      text-transform: uppercase;
+      font-family: "SourceSansPro";
+      font-weight: 600;
+      font-size: 22px;
+      padding: 0 .5rem;
+      @include minMedia(550) {
+        padding: 0 1rem;
+      }
+      @include minMedia(800) {
+        font-size: 30px;
+        padding: 0 2rem;
+      }
+    }
+    &.success-mail {
+      display: flex;
+      align-items: center;
+    }
+  }
+}
+
+// =================================
+
+.contact-form .success span {
+  color: #fff
+}
+.modal-form .success span {
+  color: #012456
+}
+
+// =================================
+
+.start-project-overlay {
+  background: #fff;
+  z-index: 9999999;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  visibility: hidden;
+  overflow: hidden;
+  top: 100%;
+  transition: all .5s cubic-bezier(.4, 0, .2, 1);
+  .inner {
+    opacity: 0;
+    bottom: 50px;
+    transition: all .5s cubic-bezier(.4, 0, .2, 1) .5s;
+  }
+  &.is-active {
+    top: 0;
+    visibility: visible;
+    .inner {
+      opacity: 1;
+      bottom: 0;
+    }
+  }
+  .wrapper {
+    padding: 55px 0 30px;
+    position: absolute;
+    margin: auto;
+    width: 100%;
+    height: 100%;
+    display: block;
+    overflow: auto;
+    @include minMedia(550) {
+      padding: 70px 30px;
+    }
+    @include minMedia(800) {
+      padding: 80px 50px;
+    }
+    @include minMedia(1100) {
+      padding: 100px;
+    }
+  }
+  .close-btn {
+    position: absolute;
+    background: 0 0;
+    border: 0;
+    cursor: pointer;
+    top: 20px;
+    right: 20px;
+    width: 20px;
+    height: 20px;
+    z-index: 99999;
+    @include minMedia(550) {
+      top: 40px;
+      right: 20px;
+    }
+    @include minMedia(800) {
+      top: 50px;
+      right: 50px;
+    }
+    @include minMedia(1400) {
+      right: 70px;
+    }
+    span {
+      position: absolute;
+      width: 25px;
+      height: 2px;
+      content: "";
+      display: block;
+      background: #000;
+      right: 0;
+      top: 15px;
+      @include minMedia(550) {
+        width: 27px;
+      }
+      @include minMedia(800) {
+        width: 30px;
+      }
+
+      &:first-child {
+        transform: rotate(45deg);
+      }
+      &:nth-child(2) {
+        transform: rotate(-45deg);
+      }
+    }
+  }
+}

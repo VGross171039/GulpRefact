@@ -1,0 +1,209 @@
+.h1-title{
+  font-size: 34px;
+  @include minMedia(550) {
+    font-size: 2rem;
+    line-height: 1.15;
+  }
+  @include minMedia(800) {
+    font-size: 2.5rem;
+  }
+  @include minMedia(1100) {
+    font-size: 3.0rem;
+  }
+  @include minMedia(1400) {
+    font-size: 3.2rem;
+  }
+  @media (max-height: 450px) and (orientation: landscape) {
+    font-size: 40px;
+  }
+}
+
+.h1-accent{
+  font-family: "BaskerCir", serif;
+  font-weight: 400;
+  font-size: calc(34px*1.1);
+  font-style: italic;
+  @include minMedia(550) {
+    font-size: calc(2rem * $ksize);
+  }
+  @include minMedia(800) {
+    font-size: calc(2.5rem * $ksize);
+  }
+  @include minMedia(1100) {
+    font-size: calc(3.0rem * $ksize);
+  }
+  @include minMedia(1400) {
+    font-size: calc(3.2rem * $ksize);
+  }
+  @media (max-height: 450px) and (orientation: landscape) {
+    font-size: 40px;
+    font-size: calc(40px * $ksize);
+  }
+}
+
+// ====================================================
+
+.h2-title{
+  font-size: 28px;
+  @include minMedia(550) {
+    font-size: 1.8rem;
+  }
+  @include minMedia(800) {
+    font-size: 1.8rem;
+  }
+  @include minMedia(1100) {
+    font-size: 2.1rem;
+  }
+  @include minMedia(1400) {
+    font-size: 2.3rem;
+  }
+  @media (max-height: 450px) and (orientation: landscape) {
+    font-size: 40px;
+  }
+}
+
+.h2-accent{
+  font-family: "BaskerCir", serif;
+  font-weight: 400;
+  font-size: calc(28px * $ksize);
+  font-style: italic;
+  @include minMedia(550) {
+    font-size: calc(1.8rem * $ksize);
+  }
+  @include minMedia(800) {
+    font-size: calc(1.8rem * $ksize);
+  }
+  @include minMedia(1100) {
+    font-size: calc(2.1rem * $ksize);
+  }
+  @include minMedia(1400) {
+    font-size: calc(2.3rem * $ksize);
+  }
+  @media (max-height: 450px) and (orientation: landscape) {
+    font-size: calc(40px * $ksize);
+  }
+}
+
+// ==================================================
+
+.footertitle{
+  font-size: 26px;
+  @include minMedia(550) {
+    font-size: 1.5rem;
+  }
+  @include minMedia(800) {
+    font-size: 1.7rem;
+  }
+  @include minMedia(1100) {
+    font-size: 2rem;
+  }
+  @include minMedia(1400) {
+    font-size: 2.05rem;
+  }
+  @media (max-height: 450px) and (orientation: landscape) {
+    font-size: 35px;
+  }
+}
+
+.footeraccent{
+  font-family: "BaskerCir";
+  font-weight: 400;
+  font-style: italic;
+  font-size: calc(26px * $ksize);
+  @include minMedia(550) {
+    font-size: calc(1.5rem * $ksize);
+  }
+  @include minMedia(800) {
+    font-size: calc(1.7rem * $ksize);
+  }
+  @include minMedia(1100) {
+    font-size: calc(2rem * $ksize);
+  }
+  @include minMedia(1400) {
+    font-size: calc(2.2rem * $ksize);
+  }
+  @media (max-height: 450px) and (orientation: landscape) {
+    font-size: calc(35px * $ksize);
+  }
+}
+
+// =======================================================
+
+.h3-title{
+  font-size: 22px;
+  @include minMedia(550) {
+    font-size: 1.25rem;
+  }
+  @include minMedia(800) {
+    font-size: 1.45rem;
+  }
+  @include minMedia(1100) {
+    font-size: 1.7rem;
+  }
+  @include minMedia(1400) {
+    font-size: 1.8rem;
+  }
+  @media (max-height: 450px) and (orientation: landscape) {
+    font-size: 30px;
+  }
+}
+
+// ============================================
+
+.h1{
+  @extend h1;
+  @extend .h1-title;
+  .js-example,
+  &.accent{
+    span {
+      @extend .h1-accent;
+    }
+  }
+}
+
+.h2 {
+  @extend h2;
+  @extend .h2-title;
+  span {
+    @extend .h2-accent;
+  }
+}
+
+.h2-footer {
+  @extend h2;
+  @extend .footertitle;
+  span {
+    @extend .footeraccent;
+  }
+}
+
+.h3 {
+  @extend h3;
+  @extend .h3-title;
+}
+
+// =======================================
+
+.tiped-wrap {
+  @extend h1;
+  font-size: 1.5rem;
+  @include minMedia(800) {
+    font-size: 1.8rem;
+  }
+  @include minMedia(1100) {
+    font-size: 2rem;
+  }
+  @include minMedia(1400) {
+    font-size: 2.2rem;
+  }
+  @media (max-height: 450px) and (orientation: landscape) {
+    font-size: 30px;
+  }
+  .example-block {
+    display: block;
+  }
+}
+
+
+
+

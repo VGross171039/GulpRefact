@@ -1,0 +1,19 @@
+.testslider{
+  &.title-wrap{
+    padding: 30px 0;
+    margin-bottom: 30px;
+  }
+}
+
+.image-slider{
+  width: 100%;
+  .img-block {
+    max-width: 400px;
+    position: relative;
+    margin: auto;
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+}

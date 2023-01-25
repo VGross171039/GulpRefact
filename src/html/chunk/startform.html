@@ -1,0 +1,59 @@
+ <div class="start-project-overlay"> <!-- Add is-active -->
+  <div class="wrapper">
+    <button class="close-btn display-block js-close-button">
+      <span></span>
+      <span></span>
+    </button>
+    <div class="container inner">
+      <div class="row">
+        <div class="col-100">
+          <h2 class="h1 deco-line lh-1 color-black">Начать проект</h2>
+          <!-- The form -->
+          <form action="#" id="modal-form" class="form-overlay modal-form">
+            <div class="form-body">
+              <div class="success"><span></span></div>
+              <ul class="form-fields">
+                <li>
+                  <div class="input-container">
+                    <input name="name" type="text" value="" class="large" required placeholder="Укажите Ваше имя *" />
+                  </div>
+                </li>
+                <li>
+                  <div class="input-container">
+                    <input name="phone" type="tel" value="" class="large" required placeholder="Номер телефона *" />
+                  </div>
+                </li>
+                <li>
+                  <div class="input-container">
+                    <input name="email" type="email" value="" class="large" placeholder="E-mail" />
+                  </div>
+                </li>
+                <li>
+                  <div class="input-container input-container-select">
+                    <select name="project_budget">
+                      <option value disabled selected>Бюджет проекта / работ</option>
+                      <option>Менее 30 000 рублей</option>
+                      <option>30 000 - 70 000 рублей</option>
+                      <option>70 000 - 120 000 рублей</option>
+                      <option>120 000 ++ рублей</option>
+                    </select>
+                  </div>
+                </li>
+                <li>
+                  <div class="input-container area-container">
+                    <textarea name="message" id="message-contact" rows="7" required
+                      placeholder="Ключевые детали проекта / работ, включая сроки ...*"></textarea>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="form-footer mt-1">
+              <button class="form-btn" id="form-submit-button">Отправить</button>
+            </div>
+          </form>
+          <!-- The form -->
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

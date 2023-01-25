@@ -1,0 +1,36 @@
+.bg--transparent {
+  background: transparent;
+}
+.bg-white {
+  background: theme_color("primary");
+}
+.bg-gray {
+  background: theme_color("gray");
+}
+.bg-dark {
+  background: theme_color("dark");
+}
+.bg-black {
+  background: theme_color("black");
+}
+.bg-overlay {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+.bg--cover {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.bg-glass {
+  position: relative;
+  &::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    background: rgba(0, 0, 0, .4);
+  }
+}

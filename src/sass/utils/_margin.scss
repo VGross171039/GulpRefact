@@ -1,0 +1,24 @@
+$styles: (
+  ".m-auto": (margin: 0 auto),
+  ".mt-0": (margin-top: 0rem),
+  ".mb-0": (margin-bottom: 0rem),
+
+  ".mt-05": (margin-top: 0.5rem),
+  ".mb-05": (margin-bottom: 0.5rem),
+  ".mr-05": (margin-right: 0.5rem),
+  ".ml-05": (margin-left: 0.5rem),
+  ".my-05": (margin: 0.5rem 0),
+  ".mx-05": (margin: 0 0.5rem),
+
+  ".mt-1": (margin-top: 1rem),
+  ".mb-1": (margin-bottom: 1rem),
+  ".mr-1": (margin-right: 1rem),
+  ".ml-1": (margin-left: 1rem),
+  ".my-1": (margin: 1rem 0),
+  ".mx-1": (margin: 0 1rem),
+
+  ".mt-2": (margin-top: 2rem),
+  ".mb-2": (margin-bottom: 2rem)
+);
+
+@include generate_styles($styles);

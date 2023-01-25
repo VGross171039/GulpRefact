@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en" class="">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../assets/css/style.css">
+  <title>Мои работы</title>
+</head>
+
+<body>
+  <div class="page-wrap">
+
+    @include('../chunk/header.html')
+
+    <div class="content-wrap">
+
+      <section class="hero--work section--inner">
+        <div class="container">
+          <div class="row">
+            <div class="col-100">
+              <div class="work-title">
+                <h1>Мои работы</h1>
+                <ul class="categories">
+                  <li><span data-category="all">All</span></li>
+                  <li class="active">,&nbsp;<span data-category="featured">Featured</span></li>
+                  <li>,&nbsp;<span data-category="finance">Finance</span></li>
+                  <li>,&nbsp;<span data-category="engineering">Engineering</span></li>
+                  <li>,&nbsp;<span data-category="legal">Legal</span></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-100">
+              <div class="work-grid">
+                <div class="work-grid-inner">
+
+
+                  <div class="isotope-item">
+                    <a href="/works/detail/" class="grid-item work-item">
+                      <div class="inner">
+                        <div class="grid-item-image bg--cover" style="background-image: url(../assets/images/work/aservice/prev.jpg);"></div>
+                        <div class="work-logo">
+                          <span>Logo</span>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="isotope-item">
+                    <a href="/works/detail/" class="grid-item work-item">
+                      <div class="inner">
+                        <div class="grid-item-image bg--cover" style="background-image: url(../assets/images/work/beautyshop/prev.jpg);"></div>
+                        <div class="work-logo">
+                          <span>Logo</span>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="isotope-item">
+                    <a href="/works/detail/" class="grid-item work-item">
+                      <div class="inner">
+                        <div class="grid-item-image bg--cover" style="background-image: url(../assets/images/work/fred/prev.jpg);"></div>
+                        <div class="work-logo">
+                          <img src="../assets/images/work/logo/MIRUS.png" alt="Mirus" />
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+
+                  <div class="isotope-item">
+                    <a href="/works/detail/" class="grid-item work-item">
+                      <div class="inner">
+                        <div class="grid-item-image bg--cover" style="background-image: url(../assets/images/work/newyear/prev.jpg);">
+                        </div>
+                        <div class="work-logo">
+                          <span>Logo</span>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="isotope-item">
+                    <a href="/works/detail/" class="grid-item work-item">
+                      <div class="inner">
+                        <div class="grid-item-image bg--cover" style="background-image: url(../assets/images/work/hotel/prev.jpg);">
+                        </div>
+                        <div class="work-logo">
+                          <span>Logo</span>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="isotope-item">
+                    <a href="/works/detail/" class="grid-item work-item">
+                      <div class="inner">
+                        <div class="grid-item-image bg--cover" style="background-image: url(../assets/images/work/tellus/prev.jpg);"></div>
+                        <div class="work-logo">
+                          <span>Logo</span>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </div>
+
+    @include('../chunk/footer.html')
+
+  </div>
+  <script src="../assets/js/main.js"></script>
+</body>
+
+</html>

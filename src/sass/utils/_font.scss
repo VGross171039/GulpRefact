@@ -1,0 +1,16 @@
+$styles: (
+  '.font-italic': (font-style: italic),
+  '.font-bold': (font-weight: 600),
+  '.font-light': (font-weight: 300),
+  // ========== Font-size ==========
+  '.fs-14': (font-size: .7rem),
+  '.fs-16': (font-size: 0.8rem),
+  '.fs-18': (font-size: .9rem),
+  '.fs-20': (font-size: 1rem),
+  '.fs-24': (font-size: 1.2rem),
+  // ========== Line-height ==========
+  '.lh-1': (line-height: 1),
+  '.lh-125': (line-height: 1.25)
+);
+
+@include generate_styles($styles);

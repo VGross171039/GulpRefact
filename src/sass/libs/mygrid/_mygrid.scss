@@ -1,0 +1,125 @@
+$grid-breakpoints: (
+  xs: 0,
+  sm: 550px,
+  md: 800px,
+  lg: 1100px,
+  xl: 1400px
+) !default;
+
+$grid-columns: 10 !default;
+
+.container {
+  width: 100%;
+  padding: 0 20px;
+  @include minMedia(550) {
+    padding: 0 30px;
+  }
+  @include minMedia(800) {
+    padding: 0 50px;
+  }
+  @include minMedia(1400) {
+    padding: 0 150px;
+  }
+  @include minMedia(1800) {
+    max-width: none;
+    padding: 0 200px;
+  }
+}
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+$styles: (
+  ".col-25": (
+    width: 25%
+  ),
+  ".col-33": (
+    width: calc(100% / 3)
+  ),
+  ".col-40": (
+    width: 40%
+  ),
+  ".col-50": (
+    width: 50%
+  ),
+  ".col-60": (
+    width: 60%
+  ),
+  ".col-66": (
+    width: calc((100% / 3)*2)
+  ),
+  ".col-75": (
+    width: 75%
+  ),
+  ".col-100": (
+    width: 100%
+  )
+);
+
+@include generate_styles($styles);
+
+@each $bp, $val in $grid-breakpoints {
+  @if $bp != "xs" {
+    .col-20--#{$bp} {
+      @include minMedia($val) {
+        width: 20%;
+      }
+    }
+    .col-25--#{$bp} {
+      @include minMedia($val) {
+        width: 25%;
+      }
+    }
+    .col-33--#{$bp} {
+      @include minMedia($val) {
+        width: calc(100% / 3);
+      }
+    }
+    .col-40--#{$bp} {
+      @include minMedia($val) {
+        width: 40%;
+      }
+    }
+    .col-50--#{$bp} {
+      @include minMedia($val) {
+        width: 50%;
+      }
+    }
+    .col-60--#{$bp} {
+      @include minMedia($val) {
+        width: 60%;
+      }
+    }
+    .col-66--#{$bp} {
+      @include minMedia($val) {
+        width: calc((100% / 3) * 2);
+      }
+    }
+    .col-75--#{$bp} {
+      @include minMedia($val) {
+        width: 75%;
+      }
+    }
+    .col-80--#{$bp} {
+      @include minMedia($val) {
+        width: 80%;
+      }
+    }
+    .col-100--#{$bp} {
+      @include minMedia($val) {
+        width: 100%;
+      }
+    }
+  }
+}
+
+[class*=" col-"],
+[class^="col-"] {
+  padding: 0;
+  min-height: 1px;
+  position: relative;
+  @include minMedia(800) {
+    padding: 0 20px;
+  }
+}

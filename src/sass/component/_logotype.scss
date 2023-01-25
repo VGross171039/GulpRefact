@@ -1,0 +1,26 @@
+.header-logo {
+  font-family: "SourceSansPro";
+  font-weight: 300;
+  display: block;
+  text-align: left;
+  width: auto;
+  height: auto;
+  background-size: contain;
+  position: absolute;
+  transition: all .3s cubic-bezier(.4, 0, .2, 1);
+  color: #fff;
+  opacity: .8;
+  &:hover{
+    opacity: 1;
+  }
+  span{
+    font-family: "LibreBaskerville";
+    font-weight: 400;
+    display: block;
+    text-transform: uppercase;
+  }
+  .header-light &{
+    color: #000;
+  }
+}
+
