@@ -1,8 +1,3 @@
-* {
-  outline: none;
-  box-sizing: border-box;
-}
-
 img {
   max-width: 100%;
 }
@@ -10,10 +5,6 @@ img {
 a {
   color: inherit;
   text-decoration: none;
-}
-
-body {
-  background: theme_color("body");
 }
 
 h1,
