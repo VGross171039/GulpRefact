@@ -17,6 +17,10 @@ button, .btn {
   @include minMedia(800) {
     padding: 17px 22px;
   }
+  @media (max-height: 450px) and (orientation: landscape) {
+    font-size: 14px;
+    padding: 15px 20px;
+  }
 }
 
 .btn {

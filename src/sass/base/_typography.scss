@@ -55,6 +55,9 @@ p{
       margin-top: 1.4rem;
     }
   }
+  @media (max-height: 450px) and (orientation: landscape) {
+    font-size: 16px;
+  }
 }
 
 @import "fonts";

@@ -75,6 +75,9 @@
     @include minMedia(800) {
       font-size: 14px;
     }
+    @media (max-height: 450px) and (orientation: landscape) {
+      font-size: 13px;
+    }
   }
   .light &{
     .hero-subtitle{

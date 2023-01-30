@@ -31,6 +31,9 @@
   @include minMedia(800) {
     font-size: 15px;
   }
+  @media (max-height: 450px) and (orientation: landscape) {
+    font-size: 13px;
+  }
   &:hover span {
     top: 40px;
     @include minMedia(550) {
@@ -38,6 +41,7 @@
     }
   }
   span {
+    cursor: pointer;
     width: 2px;
     height: 25px;
     background-color: #18e591;
